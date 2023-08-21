@@ -17,7 +17,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import id.ajiguna.gmailclonecompose.DrawerMenuData
+import id.ajiguna.gmailclonecompose.model.DrawerMenuData
 
 @Composable
 fun GmailDrawerMenu(dp: Dp = 8.dp, scrollState: ScrollState){
