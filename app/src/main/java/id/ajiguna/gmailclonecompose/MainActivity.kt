@@ -20,6 +20,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import id.ajiguna.gmailclonecompose.components.GmailDrawerMenu
 import id.ajiguna.gmailclonecompose.components.HomeAppBar
 import id.ajiguna.gmailclonecompose.components.HomeBottomMenu
+import id.ajiguna.gmailclonecompose.components.MailList
 import id.ajiguna.gmailclonecompose.ui.theme.GmailCloneComposeTheme
 
 class MainActivity : ComponentActivity() {
@@ -56,13 +57,7 @@ fun GmailApp() {
         bottomBar = {
             HomeBottomMenu()
         }){
-        LazyColumn{
-            items(50){
-                index ->
-                Text(text = "Aji $index")
-                Divider()
-            }
-        }
+        MailList(it)
     }
 
 }
