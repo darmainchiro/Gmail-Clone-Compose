@@ -18,6 +18,7 @@ import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import id.ajiguna.gmailclonecompose.components.GmailDrawerMenu
+import id.ajiguna.gmailclonecompose.components.GmailFab
 import id.ajiguna.gmailclonecompose.components.HomeAppBar
 import id.ajiguna.gmailclonecompose.components.HomeBottomMenu
 import id.ajiguna.gmailclonecompose.components.MailList
@@ -56,8 +57,10 @@ fun GmailApp() {
         },
         bottomBar = {
             HomeBottomMenu()
-        }){
-        MailList(it)
+        },
+        floatingActionButton = { GmailFab(scrollState) }
+    ){
+        MailList(it, scrollState)
     }
 
 }
