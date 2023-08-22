@@ -12,7 +12,7 @@ import id.ajiguna.gmailclonecompose.model.BottomMenuData
 fun HomeBottomMenu(){
     val items = listOf(BottomMenuData.Mail,BottomMenuData.Meet)
     
-    BottomNavigation(backgroundColor = Color.White, contentColor = Color.Black) {
+    BottomNavigation() {
         items.forEach { 
             BottomNavigationItem(
                 label = { Text(text = it.title)},
